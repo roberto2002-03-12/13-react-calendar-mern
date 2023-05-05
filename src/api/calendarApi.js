@@ -1,10 +1,7 @@
 import axios from 'axios';
-import { getEnvVariables } from '../helpers/getEnvVariables';
-
-const { VITE_API_URL } = getEnvVariables();
 
 const calendarApi = axios.create({
-    baseURL: 'http://localhost:4000/api'
+    baseURL: 'https://calendar-app-api-dm7x.onrender.com/api'
 });
 
 //ToDo configurar interceptores
